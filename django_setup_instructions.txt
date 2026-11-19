@@ -1,0 +1,81 @@
+# Install Django
+pip install Django
+
+# create main folder
+mkdir server
+
+# Create django env
+python -m virtualenv djangoenv
+
+# Activate django env
+./djangoenv/Scripts/Activate.ps1
+
+# Install dependencies
+python3 -m pip install -U -r requirements.txt
+
+# Create Projects for the app and project
+django-admin startproject djangoapp
+django-admin startproject djangoproj
+
+# move files to source folders
+
+# ensure the mangae file points to the proj folder
+
+# create new react app called frontend
+npm create vite@latest frontend -- --template react
+
+# move index to static folder and craete additional htmls for pages
+
+# update urls in the djangoproj folder
+
+# craete apps modue in the django app folder 
+from django.apps import AppConfig
+
+
+class DjangoappConfig(AppConfig):
+    name = 'djangoapp'
+
+# update settings in proj folder to include templates
+
+# Install psycopg2
+pip install psycopg2
+
+# Run migration for first time
+pytyhon manage.py migrate
+
+# Set detabase setting in settings.py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'customer360', # table name
+        'USER': 'casaos',
+        'PASSWORD': 'casaos',
+        'HOST': '192.168.1.166',
+        'PORT': '5432',
+    }
+}
+
+# Make the migrations
+python3.11 manage.py makemigrations "app name"
+
+# Run migration for first time
+pytyhon manage.py migrate
+
+# Test Server
+python manage.py runserver
+
+# Create Models for the DATABASES for EXAMPLE...
+class Customer(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=100)
+    phone = models.CharField(max_length=20)
+    address = models.CharField(max_length=200)
+
+    def __str__(self):
+        return str(self.id)
+
+
+# Create Templates
+use New-Item 'filename' to create the template
+

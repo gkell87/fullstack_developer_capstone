@@ -1,0 +1,7 @@
+# After changing dirctory to database folder
+
+# Build the app
+docker build . -t nodeapp
+
+# Start the server
+docker-compose up
