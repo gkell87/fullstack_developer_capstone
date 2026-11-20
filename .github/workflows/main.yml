@@ -64,8 +64,6 @@ jobs:
 
 push:
   branches: [master, main]
-Run the below command when PR is created on main branches (main or master):
-yaml
 
 pull_request:
   branches: [master, main]
