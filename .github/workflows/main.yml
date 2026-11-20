@@ -61,12 +61,6 @@ jobs:
           The next line defines when this workflow will run. The workflow should run when developers push a change to the main branch or create a PR. These two ways are captured as below:
           Run the below command on push to the main branch (main or master):
           yaml
-
-push:
-  branches: [master, main]
-
-pull_request:
-  branches: [master, main]
     
 
 
