@@ -20,7 +20,7 @@ spec:
         run: dealership
     spec:
       containers:
-      - image: us.icr.io/g_kell87/dealership:latest
+      - image: us.icr.io/sn-labs-gkell87/dealership:latest
         imagePullPolicy: Always
         name: dealership
         ports:

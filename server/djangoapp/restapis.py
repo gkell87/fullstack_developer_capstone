@@ -9,7 +9,7 @@ backend_url = os.getenv(
     'backend_url', default="https://gkell87-3030.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai")
 sentiment_analyzer_url = os.getenv(
     'sentiment_analyzer_url',
-    default="http://localhost:5000/")
+    default="https://sentianalyzer.2hj3wlr2efor.us-south.codeengine.appdomain.cloud")
 
 # *kwargs means keyword arguments
 def get_request(endpoint, **kwargs):
